@@ -4,29 +4,47 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
 		<title>Yo thug! Jive Speaking</title>
 	</head>
-	<body>
-		<nav>
-			<h1>Jive Talk</h1>
+	<body background="./resources/images/background.jpg">
+		<nav class="navigation container">
+			<div class="navigation-heading">
+				<h1 class="container">Jive Talks 😗🚬</h1>
+			</div>
 		</nav>
-		<div>
-			<h3>Type your sentence in here:</h3>
+		<header class="hero conatiner">
+			<a href="/">
+				<img class="hero-img" src="/resources/images/logo.png" alt="logo.."
+			/></a>
+		</header>
+		<div class="container">
 			<textarea
+				class="boxes"
 				name="textarea"
 				id="input-text"
-				placeholder="Enter your sentence, we convert it to jive"
-				style="height: 10vh; resize: none; width: 40%; border: 1px solid black"
+				spellcheck="false"
+				placeholder="Enter your sentence here, and we will convert it to Jive Speak...."
 			></textarea>
-			<button id="btn-translate" style="display: block">Translate</button>
+			<button class="btn" id="btn-translate">
+				<div class="btn-content">Translate</div>
+			</button>
 		</div>
-		<div>
-			<h2>Output in Jive comes here 👇</h2>
-			<div
-				id="jive-talk"
-				style="height: 10vh; border: 1px solid black; width: 40%"
-			></div>
+		<div class="container">
+			<h2 class="output-heading">Output will come here 👇</h2>
+			<div class="boxes">
+				<div id="jive-talk"></div>
+			</div>
 		</div>
+		<footer class="footer">
+			<div class="footer-content">
+				<a
+					class="link footer-link"
+					href="https://pushpjain.netlify.app/projects.html"
+					><h2>More of such interesting projects.</h2></a
+				>
+			</div>
+		</footer>
 		<script src="app.js" type="text/javascript"></script>
 	</body>
 </html>

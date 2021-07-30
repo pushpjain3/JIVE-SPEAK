@@ -4,7 +4,7 @@ const serverURL = "https://api.funtranslations.com/translate/jive.json";
 const btnTranslate = document.querySelector("#btn-translate");
 
 btnTranslate.addEventListener("click", () => {
-	const url = serverURL + "?" + "text=" + inputText.value;
+	const url = serverURL + "?text=" + inputText.value;
 
 	fetch(url)
 		.then((response) => response.json())
